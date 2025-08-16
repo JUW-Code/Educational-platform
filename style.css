@@ -1,29 +1,23 @@
 header{
     padding: 2rem 5rem;
 }
-.header-nav{
+.header-card{
      position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     padding: 20px 60px;
-    display: flex;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     z-index: 10;
+    background: white;
 }
- .header-nav ul li{
-    display: inline;
-    list-style: none;
-    margin: 0 1rem;
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
  }
- .header-nav nav ul li a{
-    text-decoration: none;
-}
-.header-nav h1{
-    gap: 0;
-}
 .nav-links{
     display: flex;
     list-style: none;
@@ -34,7 +28,7 @@ header{
     color: black;
     font-weight: 600;
 }
-.contact.btn{
+.contact-btn{
     background: orange;
     padding: 8px 15px;
     border-radius: 4px;
@@ -45,8 +39,7 @@ header{
 .main-container{
     background-image: url(./image/59ddfecaeb2a99ca36889ed7a46583c2.jpg) ;
     width: 110%;
-    height: 70rem;
-    animation: infinite 3s ease-in-out;
+    height: 15rem;
 }
 .hero{
     position: relative;
@@ -60,7 +53,6 @@ header{
 .hero-content h2{
     font-size: 65px;
     color: white;
-    animation:  3s  ease-in-out;
 }
 .hero-content span{
     color: blue;
