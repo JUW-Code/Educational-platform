@@ -2,13 +2,13 @@ header{
     padding: 2rem 5rem;
 }
 .header-card{
-     position: absolute;
+     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width:75%;
     padding: 20px 60px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     z-index: 10;
     background: white;
@@ -17,6 +17,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+ }
+ .navbar h1{
+    font-weight: 500;
+    font-size: 300%;
  }
 .nav-links{
     display: flex;
@@ -29,7 +33,6 @@ header{
     font-weight: 600;
 }
 .contact-btn{
-    background: orange;
     padding: 8px 15px;
     border-radius: 4px;
     color: white;
@@ -37,7 +40,6 @@ header{
     text-decoration: none;
 }
 .main-container{
-    background-image: url(./image/59ddfecaeb2a99ca36889ed7a46583c2.jpg) ;
     width: 110%;
     height: 15rem;
 }
@@ -53,9 +55,10 @@ header{
 .hero-content h2{
     font-size: 65px;
     color: white;
+    animation: pulse 2s ease-in-out infinite alternate;
 }
 .hero-content span{
-    color: blue;
+    color: orange;
 }
 .cards{
     display: flex;
@@ -70,13 +73,13 @@ header{
     border-radius: 8px;
     width: 250px;
     text-align: center;
+    display: grid;
 }
 .card img{
     width: 50px;
     margin-bottom: 10px;
 }
 .card a{
-    color: blue;
     text-decoration: none;
     font-weight: bold;
 }
