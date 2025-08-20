@@ -11,23 +11,20 @@
 <body>
     <main class="main-container">
     <header class="header-card">
-        <nav class="navbar">
-         <h1><img src="./image/logo.png">COURSE</h1>
+        <nav class="navbar" role="navigation" hidden>
+         <span class="logo" aria-hidden="true"><img src="./image/logo.png">COURSE</span>
          <ul class="nav-links">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
+                <li><a href="" aria-current="page">HOME</a></li>
                 <li><a href="">COURSES</a></li>
-                <li><a href="">NEWS</a></li>
-                <li><a href="">ELEMENTS</a></li>
-                <li><a href="">CONTACT</a></li>
+                 <li><a href="">ABOUT US</a></li>
+               <li><a href="">CONTACT</a></li>
              </ul>
-             <div class="contact-btn">
-                <a href="tel:+2348113037077">+234 811 303 7077</a>
-             </div>
         </div>
         </nav>
     </header>
 </main>
+
+
 <section class="hero">
  <div class="hero-content">
     <h2>Get your <span>Education</span> today!</h2>
@@ -50,24 +47,150 @@
     </div>
  </div>
 </section>
-<section>
-    <h4 class="course">Popular Courses</h4>
-    <div class="card-1">
-        <img src="./image/course_1.jpg" alt="">
-        <a href=""><h5>A complete guide to design</h5></a>
-        <p>Adobe Guide, Layes, Smart Objects etc..</p>
-    </div>
-    <div class="card-1">
-        <img src="./image/course_2.jpg" alt="">
-        <a href=""><h5>Beginners guide to HTML</h5></a>
-        <p>Adobe Guide, Layes, Smart Objects etc..</p>
-    </div>
-    <div class="card-1">
-        <img src="./image/course_3.jpg" alt="">
-        <a href=""><h5>Advanced Photoshop</h5></a>
-        <p>Adobe Guide, Layes, Smart Objects etc..</p>
-    </div>
+<section class="courses">
+  <div class="container">
+    <h2 class="section-title">Our Courses</h2>
+    <div class="course-grid">
+      
+      <!-- Card 1 -->
+      <div class="course-card">
+        <img src="./image/course_1.jpg" alt="Design Course">
+        <div class="course-content">
+          <h3><a href="">A complete guide to design</a></h3>
+          <p>Adobe Guide, Layers, Smart Objects etc...</p>
+          <div class="course-footer">
+            <div class="author">
+              <img src="./image/author.jpg" alt="Michael Smith">
+              <span>Michael Smith, Author</span>
+            </div>
+            <span class="price">$29</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="course-card">
+        <img src="./image/course_2.jpg" alt="HTML Course">
+        <div class="course-content">
+          <h3></h3><a href="">Beginners guide to HTML</a></h3>
+          <p>HTML basics, tags, structure, elements...</p>
+          <div class="course-footer">
+            <div class="author">
+              <img src="./image/author.jpg" alt="Michael Smith">
+              <span>Michael Smith, Author</span>
+            </div>
+            <span class="price">$29</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="course-card">
+        <img src="./image/course_3.jpg" alt="Photoshop Course">
+        <div class="course-content">
+          <h3><a href="">Advanced Photoshop</a></h3>
+          <p>Adobe Guide, Layers, Smart Objects etc...</p>
+          <div class="course-footer">
+            <div class="author">
+              <img src="./image/author.jpg" alt="Michael Smith">
+              <span>Michael Smith, Author</span>
+            </div>
+            <span class="price">$29</span>
+          </div>
+        </div>
+      </div>
+ </div>
+  </div>
 </section>
-    
+
+  <section class="promo-section">
+    <div class="promo-left">
+      <h2>Register now and get a discount</h2>
+      <h3>50% discount until 1 January</h3>
+      <p>
+        In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae 
+        tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor 
+        fermentum. Aliquam, augue a gravida rutrum, ante nisl fermentum nulla, 
+        vitae tempus.
+      </p>
+      <button class="btn">REGISTER NOW</button>
+    </div>
+
+    <div class="promo-right">
+      <h2>Search for your course</h2>
+      <form>
+        <input type="text" placeholder="Course Name">
+        <input type="text" placeholder="Category">
+        <input type="text" placeholder="Degree">
+        <button type="submit" class="btn search-btn">SEARCH COURSE</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Newsletter Section --> 
+    <section class="newsletter">
+    <h2>Subscribe to newsletter</h2>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Email Address">
+      <button type="submit">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Logo / About -->
+      <div class="footer-col">
+        <h3 class="logo">COURSE</h3>
+        <p>
+          In aliquam, augue a gravida rutrum, ante nisl fermentum nulla,
+          vitae tempor nisl ligula vel nunc. Proin quis mi malesuada,
+          finibus tortor fermentum, tempor lacus.
+        </p>
+      </div>
+
+      <!-- Menu Links -->
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Campus Pictures</a></li>
+          <li><a href="#">Tuitions</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 Blvd Libertad, 34 m05200 Arévalo</p>
+        <p>📞 0034 37483 2445 322</p>
+        <p>✉ hello@company.com</p>
+        <div class="socials">
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright ©2025 All rights reserved | This template is made with ❤ by Colorlib</p>
+    </div>
+  </footer>
 </body>
 </html>
